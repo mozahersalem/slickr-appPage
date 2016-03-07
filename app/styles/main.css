@@ -1,0 +1,102 @@
+.borderInspect {
+  border: 1px solid red; }
+
+body {
+  font-family: 'Heveltica', sans-serif;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.main-nav {
+  position: fixed;
+  top: 50px;
+  z-index: 5; }
+  .main-nav li {
+    display: inline-block;
+    background-color: black; }
+
+section {
+  background-color: rgba(255, 255, 255, 0) !important; }
+
+.panel {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); }
+
+.landingcCntainer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: black; }
+
+.fullWH {
+  height: 100%;
+  width: 100%; }
+  .fullWH .fullHeight {
+    height: 100%;
+    background: black;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), black);
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(black));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), black);
+    /* Standard syntax */ }
+    .fullWH .fullHeight .mobile-start {
+      position: absolute;
+      margin-left: 15px;
+      bottom: 50px; }
+    .fullWH .fullHeight .parent-center-h-content {
+      height: 100%; }
+      .fullWH .fullHeight .parent-center-h-content .center-h-content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%; }
+    .fullWH .fullHeight .appSection img {
+      height: 70%;
+      margin-left: auto;
+      margin-right: auto; }
+    .fullWH .fullHeight p {
+      color: white; }
+  .fullWH .descriptionSection {
+    background-color: transparent; }
+  .fullWH .nextSlide {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    line-height: 60px;
+    z-index: 5;
+    background-color: black; }
+
+@media screen and (max-width: 600px) {
+  .fullHeight p {
+    height: 30px;
+    overflow-y: scroll; }
+  .fullHeight .img {
+    width: 20%; } }
+
+.sectionResponsive {
+  text-align: center;
+  background-color: black !important;
+  padding: 0;
+  margin: 0; }
+  .sectionResponsive .row {
+    background-color: transparent;
+    padding-bottom: 20px; }
+  .sectionResponsive img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .sectionResponsive p {
+    color: white; }
