@@ -26,11 +26,11 @@ $(function() {
 // easing the animation of transition to next slide
 $(document).ready(function() {
   $('.btnNextSlide').localScroll({
-    duration: 1000 //time for slider
+    duration: 1500 //time for slider
   });
 });
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_e876ba4c.js","/")
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_6485bdb1.js","/")
 },{"buffer":2,"oMfpAn":5}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /*!

@@ -24,6 +24,6 @@ $(function() {
 // easing the animation of transition to next slide
 $(document).ready(function() {
   $('.btnNextSlide').localScroll({
-    duration: 1000 //time for slider
+    duration: 1500 //time for slider
   });
 });

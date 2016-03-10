@@ -1,5 +1,5 @@
 .borderInspect {
-  border: 1px solid red;
+  // border: 1px solid rgb(46, 224, 255);
 }
 body {
   // background: #f9f9f9;
@@ -8,22 +8,22 @@ body {
   width: 100%;
   position: absolute;
 }
-.main-nav {
-  position: fixed;
-  top: 50px;
-  z-index: 5;
-  li {
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-  }
-}
+// .main-nav {
+//   position: fixed;
+//   top: 50px;
+//   z-index: 5;
+//   li {
+//     display: inline-block;
+//     background-color: rgb(0, 0, 0);
+//   }
+// }
 section {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 .panel {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  // background-color: rgba(255, 255, 255, 0);
   // margin-bottom: 900px;
 }
 .panel.second {
@@ -40,6 +40,9 @@ section {
   height: 100%;
   width: 100%;
   // background-color: rgba(255, 255, 255, 0);
+  .fullWidth {
+    width: 100%;
+  }
   .fullHeight {
     height: 100%;
     background: rgb(0, 0, 0);
@@ -52,11 +55,11 @@ section {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0));
     /* Standard syntax */
-    .mobile-start {
-      position: absolute;
-      margin-left: 15px; //to simulate the padding from row bootstrap
-      bottom: 50px;
-    }
+    // .mobile-start {
+    //   position: absolute;
+    //   margin-left: 15px; //to simulate the padding from row bootstrap
+    //   bottom: 50px;
+    // }
     .parent-center-h-content {
       height: 100%;
       .center-h-content {
@@ -66,54 +69,198 @@ section {
         height: 100%;
       }
     }
-    .appSection img {
-      height: 70%;
-      margin-left: auto;
-      margin-right: auto;
+    .appSection {
+      img {
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .icon-col {
+        text-align: center;
+        padding: 15px 0;
+        .icon {
+          height: 40px;
+          width: auto;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
     }
     p {
       color: rgb(255, 255, 255);
       // height: 250px;
+      text-align: center;
     }
   }
   .descriptionSection {
     background-color: rgba(0, 0, 0, 0);
+    p{
+      text-align: justify;
+    }
+    .centerContent{
+      text-align: center;
+    }
   }
-  .nextSlide {
+}
+// @media screen and (max-width: 600px) {
+//   body {
+//     // position: relative;
+//   }
+//   .fullHeight {
+//     p {
+//       height: 30px;
+//       overflow-y: scroll;
+//     }
+//     .img {
+//       width: 20%;
+//     }
+//   }
+// }
+// Next slide row
+.nextSlide {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  // line-height: 60px;
+  z-index: 5;
+  background-color: rgb(0, 0, 0);
+  @-webkit-keyframes ani-mouse {
+    0% {
+      opacity: 1;
+      top: 29%;
+    }
+    15% {
+      opacity: 1;
+      top: 50%;
+    }
+    50% {
+      opacity: 0;
+      top: 50%;
+    }
+    100% {
+      opacity: 0;
+      top: 29%;
+    }
+  }
+  @-moz-keyframes ani-mouse {
+    0% {
+      opacity: 1;
+      top: 29%;
+    }
+    15% {
+      opacity: 1;
+      top: 50%;
+    }
+    50% {
+      opacity: 0;
+      top: 50%;
+    }
+    100% {
+      opacity: 0;
+      top: 29%;
+    }
+  }
+  @keyframes ani-mouse {
+    0% {
+      opacity: 1;
+      top: 29%;
+    }
+    15% {
+      opacity: 1;
+      top: 50%;
+    }
+    50% {
+      opacity: 0;
+      top: 50%;
+    }
+    100% {
+      opacity: 0;
+      top: 29%;
+    }
+  }
+  //  .scroll-btn {
+  //    display: block;
+  //    position: absolute;
+  //    left: 0;
+  //    right: 0;
+  //    text-align: center;
+  //  }
+  .scroll-btn > * {
+    //  display: inline-block;
+    //  line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *.active {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *:active,
+  .scroll-btn > *.active {
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    text-decoration: none;;
+  }
+  .scroll-btn .mouse {
+    position: relative;
+    display: inline-block;;
+    width: 35px;
+    height: 55px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+  }
+  .scroll-btn .mouse > * {
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    line-height: 60px;
-    z-index: 5;
-    background-color: rgb(0, 0, 0);
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
   }
 }
-@media screen and (max-width: 600px) {
-  body {
-    // position: relative;
-  }
-  .fullHeight {
-    p {
-      height: 30px;
-      overflow-y: scroll;
-    }
-    .img {
-      width: 20%;
-    }
-  }
-}
+
+
 .sectionResponsive {
   text-align: center;
   background-color: rgb(0, 0, 0) !important;
   padding: 0;
   margin: 0;
   .row {
-    background-color: rgba(0, 0, 0, 0);
-    padding-bottom: 20px;
+    padding: 20px 0;
+  }
+  .text {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding: 10px 5px;
+  }
+  .sectionBG {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    .text {
+      background-color: rgba(0, 0, 0, 1);
+      border-radius: 5px;
+    }
   }
   img {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
