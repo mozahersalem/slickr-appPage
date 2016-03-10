@@ -1,27 +1,15 @@
-.borderInspect {
-  border: 1px solid red; }
-
 body {
   font-family: 'Heveltica', sans-serif;
   height: 100%;
   width: 100%;
   position: absolute; }
 
-.main-nav {
-  position: fixed;
-  top: 50px;
-  z-index: 5; }
-  .main-nav li {
-    display: inline-block;
-    background-color: black; }
-
 section {
   background-color: rgba(255, 255, 255, 0) !important; }
 
 .panel {
   height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0); }
+  width: 100%; }
 
 .landingcCntainer {
   background-repeat: no-repeat;
@@ -32,6 +20,8 @@ section {
 .fullWH {
   height: 100%;
   width: 100%; }
+  .fullWH .fullWidth {
+    width: 100%; }
   .fullWH .fullHeight {
     height: 100%;
     background: black;
@@ -42,10 +32,6 @@ section {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(0, 0, 0, 0.6), black);
     /* Standard syntax */ }
-    .fullWH .fullHeight .mobile-start {
-      position: absolute;
-      margin-left: 15px;
-      bottom: 50px; }
     .fullWH .fullHeight .parent-center-h-content {
       height: 100%; }
       .fullWH .fullHeight .parent-center-h-content .center-h-content {
@@ -63,28 +49,104 @@ section {
         align-items: center;
         height: 100%; }
     .fullWH .fullHeight .appSection img {
-      height: 70%;
+      width: 35%;
       margin-left: auto;
       margin-right: auto; }
+    .fullWH .fullHeight .appSection .icon-col {
+      text-align: center;
+      padding: 15px 0; }
+      .fullWH .fullHeight .appSection .icon-col .icon {
+        height: 40px;
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px; }
     .fullWH .fullHeight p {
-      color: white; }
+      color: white;
+      text-align: center; }
   .fullWH .descriptionSection {
     background-color: transparent; }
-  .fullWH .nextSlide {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    line-height: 60px;
-    z-index: 5;
-    background-color: black; }
+    .fullWH .descriptionSection p {
+      text-align: justify; }
+    .fullWH .descriptionSection .centerContent {
+      text-align: center; }
 
-@media screen and (max-width: 600px) {
-  .fullHeight p {
-    height: 30px;
-    overflow-y: scroll; }
-  .fullHeight .img {
-    width: 20%; } }
+.nextSlide {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 5;
+  background-color: black; }
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+  .nextSlide .scroll-btn > * {
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px; }
+  .nextSlide .scroll-btn > *:hover,
+  .nextSlide .scroll-btn > *:focus,
+  .nextSlide .scroll-btn > *.active {
+    color: #ffffff;
+    text-decoration: none; }
+  .nextSlide .scroll-btn > *:hover,
+  .nextSlide .scroll-btn > *:focus,
+  .nextSlide .scroll-btn > *:active,
+  .nextSlide .scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    text-decoration: none; }
+  .nextSlide .scroll-btn .mouse {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 55px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px; }
+  .nextSlide .scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite; }
 
 .sectionResponsive {
   text-align: center;
@@ -92,10 +154,18 @@ section {
   padding: 0;
   margin: 0; }
   .sectionResponsive .row {
-    background-color: transparent;
-    padding-bottom: 20px; }
+    padding: 20px 0; }
+  .sectionResponsive .text {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding: 10px 5px; }
+  .sectionResponsive .sectionBG {
+    background-color: rgba(255, 255, 255, 0.05) !important; }
+    .sectionResponsive .sectionBG .text {
+      background-color: black;
+      border-radius: 5px; }
   .sectionResponsive img {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto; }
   .sectionResponsive p {
