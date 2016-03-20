@@ -48,18 +48,10 @@ section {
         -ms-flex-align: center;
         align-items: center;
         height: 100%; }
-    .fullWH .fullHeight .appSection img {
+    .fullWH .fullHeight .appSection .appImg {
       width: 35%;
       margin-left: auto;
       margin-right: auto; }
-    .fullWH .fullHeight .appSection .icon-col {
-      text-align: center;
-      padding: 15px 0; }
-      .fullWH .fullHeight .appSection .icon-col .icon {
-        height: 40px;
-        width: auto;
-        margin-right: 20px;
-        margin-left: 20px; }
     .fullWH .fullHeight p {
       color: white;
       text-align: center; }
@@ -170,3 +162,12 @@ section {
     margin-right: auto; }
   .sectionResponsive p {
     color: white; }
+
+.icon-col {
+  text-align: center;
+  padding: 15px 0; }
+  .icon-col .icon {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px; }
