@@ -70,20 +70,10 @@ section {
       }
     }
     .appSection {
-      img {
+      .appImg {
         width: 35%;
         margin-left: auto;
         margin-right: auto;
-      }
-      .icon-col {
-        text-align: center;
-        padding: 15px 0;
-        .icon {
-          height: 40px;
-          width: auto;
-          margin-right: 20px;
-          margin-left: 20px;
-        }
       }
     }
     p {
@@ -94,10 +84,10 @@ section {
   }
   .descriptionSection {
     background-color: rgba(0, 0, 0, 0);
-    p{
+    p {
       text-align: justify;
     }
-    .centerContent{
+    .centerContent {
       text-align: center;
     }
   }
@@ -208,11 +198,11 @@ section {
   .scroll-btn > *.active {
     opacity: 0.8;
     filter:alpha(opacity=80);
-    text-decoration: none;;
+    text-decoration: none;
   }
   .scroll-btn .mouse {
     position: relative;
-    display: inline-block;;
+    display: inline-block;
     width: 35px;
     height: 55px;
     margin-bottom: 10px;
@@ -237,8 +227,6 @@ section {
     animation: ani-mouse 2.5s linear infinite;
   }
 }
-
-
 .sectionResponsive {
   text-align: center;
   background-color: rgb(0, 0, 0) !important;
@@ -266,5 +254,16 @@ section {
   }
   p {
     color: rgb(255, 255, 255);
+  }
+}
+// Generic Styles
+.icon-col {
+  text-align: center;
+  padding: 15px 0;
+  .icon {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
